@@ -16,10 +16,10 @@ Letterboxd and Taste.io share different rating grades, here's the conversion:
 
 | Letterboxd | Taste.io |
 |------------|----------|
-| 0.5 – 3 ★ | awful |
-| 3.5 – 5 ★ | meh |
-| 5.5 – 7 ★ | good |
-| 7.5 – 10 ★ | amazing |
+| 0.5 – 1.5 ★ | awful |
+| 2 – 2.5 ★ | meh |
+| 3 – 3.5 ★ | good |
+| 4 – 5 ★ | amazing |
 
 ## Setup
 
