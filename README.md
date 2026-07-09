@@ -45,7 +45,7 @@ pip install -r requirements.txt
 4. Pass it when running:
 
 ```bash
-python import_letterboxd_to_taste.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --token "YOUR_TOKEN"
+python main.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --token "YOUR_TOKEN"
 ```
 
 Tokens expire after a while. If you get auth errors, grab a fresh one
@@ -55,13 +55,13 @@ Tokens expire after a while. If you get auth errors, grab a fresh one
 **Preview** (no token needed):
 
 ```bash
-python import_letterboxd_to_taste.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --dry-run
+python main.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --dry-run
 ```
 
 **Import to Taste.io**:
 
 ```bash
-python import_letterboxd_to_taste.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --token "YOUR_TOKEN"
+python main.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --token "YOUR_TOKEN"
 ```
 
 ### Useful flags
