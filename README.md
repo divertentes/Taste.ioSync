@@ -78,6 +78,7 @@ python import_letterboxd_to_taste.py --export-dir "%USERPROFILE%\LetterboxdExpor
 - Only rated films are imported (Taste.io requires a rating)
 - Some films may not be found if Taste.io doesn't have them
 - A film is only imported if **both title and year** match on Taste.io.
+- Sometimes the year of the movie from Letterboxd **can mismatch** the one from Taste.io, therefore, the script won't be able to add it.
 
 ## Disclaimer
 
