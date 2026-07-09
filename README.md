@@ -6,9 +6,9 @@ Taste.io has no public API. This script uses the same internal endpoints the web
 
 ## What it does
 
-1. Reads `ratings.csv` and `diary.csv` from your Letterboxd data export
-2. Skips movies you already rated on Taste.io (unless you pass `--update`)
-3. Searches each film on Taste.io and submits your rating
+1. Reads `ratings.csv` and `diary.csv` from your Letterboxd data export.
+2. Skips movies you already rated on Taste.io (unless you pass `--update`).
+3. Searches each film on Taste.io and submits your rating.
 
 ### Rating conversion
 
@@ -33,15 +33,15 @@ pip install -r requirements.txt
 
 ## Letterboxd export
 
-1. Go to [letterboxd.com/settings/data](https://letterboxd.com/settings/data/)
-2. Click **Export Your Data** and download the ZIP
-3. Extract it
+1. Go to [letterboxd.com/settings/data](https://letterboxd.com/settings/data/).
+2. Click **Export Your Data** and download the ZIP.
+3. Extract it.
    
 ## Taste.io login (token)
 
-1. Log in to [taste.io](https://taste.io)
-2. Open DevTools (F12) → **Network** tab → refresh the page
-3. Click the `me` request (you can look it up on the filter search bar) → look for the **Request Headers** tab → copy the `Authorization` value **without** `Bearer`
+1. Log in to [taste.io](https://taste.io).
+2. Open DevTools (F12) → **Network** tab → refresh the page.
+3. Click the `me` request (you can look it up on the filter search bar) → look for the **Request Headers** tab → copy the `Authorization` value **without** `Bearer`.
 4. Pass it when running:
 
 ```bash
@@ -75,8 +75,8 @@ python main.py --export-dir "%USERPROFILE%\LetterboxdExportPathHere" --token "YO
 
 ## Notes
 
-- Only rated films are imported (Taste.io requires a rating)
-- Some films may not be found if Taste.io doesn't have them
+- Only rated films are imported (Taste.io requires a rating).
+- Some films may not be found if Taste.io doesn't have them.
 - A film is only imported if **both title and year** match on Taste.io.
 - Sometimes the year of the movie from Letterboxd **can mismatch** the one from Taste.io, therefore, the script won't be able to add it.
 
